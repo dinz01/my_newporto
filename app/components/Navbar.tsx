@@ -41,17 +41,23 @@ export default function Navbar() {
           const isActive = activeSection === item.href.replace("#", "");
 
           return (
-            <li key={item.href}>
+            <li key={item.href} className="group">
               <a
                 href={item.href}
-                className={`text-sm md:text-base transition ${
+                className={`relative text-sm md:text-base transition ${
                   isActive
                     ? "text-foreground"
                     : "text-zinc-400 hover:text-foreground"
                 }`}
               >
                 {item.label}
-              </a>
+            {/* underline */}
+            <span
+              className={`absolute left-0 -bottom-1 h-[2px] w-full origin-left transform bg-foreground transition-transform duration-300 ${
+                isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+              }`}
+            />
+          </a>
             </li>
           );
         })}
