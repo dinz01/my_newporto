@@ -99,7 +99,7 @@ export default function Navbar() {
         {/* RESUME BUTTON */}
         <li>
           <motion.a
-            href="/CV_Rizki_Syawaludin.pdf"
+            href="/CV_RizkiSyawaludin.pdf"
             download
             whileHover={{ scale: 1.05 }}
             className="text-sm md:text-base text-primary border border-primary px-5 py-2 md:px-7 md:py-2.5 rounded-lg hover:bg-primary hover:text-background transition"
