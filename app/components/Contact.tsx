@@ -1,3 +1,7 @@
+"use client";
+
+import SocialLinks from "./SocialLinks";
+
 export default function Contact() {
   return (
     <section
@@ -24,6 +28,9 @@ export default function Contact() {
       >
         Say Hello
       </a>
+
+<SocialLinks />
+
     </section>
   );
 }
