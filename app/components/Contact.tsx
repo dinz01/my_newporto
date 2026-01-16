@@ -8,9 +8,10 @@ export default function Contact() {
       id="contact"
       className="max-w-4xl mx-auto px-6 py-32 text-center scroll-mt-24"
     >
-      <span className="text-primary font-mono text-sm">
-        03. What’s Next?
-      </span>
+<span className="font-mono text-sm">
+  <span className="text-[#00ffd5]">03.</span>{" "}
+  <span className="text-white">What’s Next?</span>
+</span>
 
       <h2 className="text-3xl md:text-4xl font-semibold text-foreground mt-4">
         Get In Touch

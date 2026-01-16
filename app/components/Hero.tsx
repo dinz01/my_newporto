@@ -12,7 +12,7 @@ export default function Hero() {
           id="hero"
           className="min-h-screen flex flex-col justify-center px-6 max-w-5xl mx-auto text-left gap-3"
         >
-          <p className="text-green-500 text-xl mb-3 leading-snug">
+          <p className="text-[#00ffd5] text-xl mb-3 leading-snug">
             Hi, my name is
           </p>
 

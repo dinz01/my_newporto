@@ -60,7 +60,7 @@ export default function Navbar() {
       transition={{ duration: 0.35, ease: "easeOut" }}
       className="fixed top-6 left-1/2 -translate-x-1/2 z-[9999] pointer-events-auto"
     >
-      <ul className="flex items-center gap-6 md:gap-8 px-6 py-4 md:px-10 rounded-lg border border-zinc-700 bg-zinc-900/80 backdrop-blur">
+      <ul className="flex items-center gap-6 md:gap-8 px-6 py-4 md:px-10 rounded-sm border border-zinc-700 bg-zinc-900/80 backdrop-blur">
 
         {/* NAV MENU */}
         {navItems.map((item) => {
@@ -74,23 +74,14 @@ export default function Navbar() {
                 initial="rest"
                 animate={isActive ? "active" : "rest"}
                 whileHover="hover"
-                className={`relative text-sm md:text-base ${
+                className={`relative text-sm md:text-base transition-colors ${
                   isActive
-                    ? "text-foreground"
-                    : "text-zinc-400 hover:text-foreground"
+                    ? "text-[#00ffd5]"
+                    : "text-zinc-400 hover:text-[#00ffd5]"
                 }`}
               >
                 {item.label}
 
-        <motion.span
-          variants={{
-            rest: { scaleX: 0 },
-            hover: { scaleX: 1 },
-            active: { scaleX: 1 },
-          }}
-          transition={{ duration: 0.25, ease: "easeOut" }}
-          className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full bg-foreground origin-left"
-        />
       </motion.a>
     </li>
   );
@@ -102,7 +93,7 @@ export default function Navbar() {
             href="/CV_RizkiSyawaludin.pdf"
             download
             whileHover={{ scale: 1.05 }}
-            className="text-sm md:text-base text-primary border border-primary px-5 py-2 md:px-7 md:py-2.5 rounded-lg hover:bg-primary hover:text-background transition"
+            className="text-sm md:text-base text-[#00ffd5] border border-[#00ffd5] px-5 py-2 md:px-7 md:py-2.5 rounded-sm transition hover:bg-[#00ffd5] hover:text-black hover:shadow-[0_0_20px_#00ffd5]"
           >
             Resume
           </motion.a>

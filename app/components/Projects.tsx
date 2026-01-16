@@ -41,7 +41,7 @@ export default function Projects() {
       >
         {/* Title */}
         <div className="flex items-center gap-4 mb-10">
-          <span className="text-primary font-mono text-sm">02.</span>
+          <span className="text-[#00ffd5] font-mono text-sm">02.</span>
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
             Projects
           </h2>
