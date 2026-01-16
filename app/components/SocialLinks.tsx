@@ -9,7 +9,7 @@ export default function SocialLinks() {
         href="https://instagram.com/rizkisywldn"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-zinc-400 hover:text-primary transition"
+        className="text-zinc-400 hover:text-[#00ffd5] transition"
         aria-label="Instagram"
       >
         <Instagram size={22} />
@@ -19,7 +19,7 @@ export default function SocialLinks() {
         href="https://www.linkedin.com/in/rizki-syawaludin-641256290"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-zinc-400 hover:text-primary transition"
+        className="text-zinc-400 hover:text-[#00ffd5] transition"
         aria-label="LinkedIn"
       >
         <Linkedin size={22} />
@@ -29,7 +29,7 @@ export default function SocialLinks() {
         href="https://github.com/dinz01"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-zinc-400 hover:text-primary transition"
+        className="text-zinc-400 hover:text-[#00ffd5] transition"
         aria-label="GitHub"
       >
         <Github size={22} />
